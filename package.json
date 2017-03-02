@@ -1,0 +1,56 @@
+{
+  "name": "KonnektSuite_3D",
+  "main": "Screens/Main/Main.html",
+  "window": {
+    "frame": false,
+    "toolbar": false,
+    "width": 1280,
+    "height": 720
+  },
+  "version": "0.0.0",
+  "description": "WEBGL Node-Webkit Engine and Editor",
+  "keywords": [
+    "WEBGL",
+    "Game Engine",
+    "Node-Webkit"
+  ],
+  "author": {
+    "name": "Keleko34",
+    "email": "gregory.guidero@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Gregory Guidero"
+    }
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "http://en.wikipedia.org/wiki/MIT_License"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keleko34/KonnektSuite_3D"
+  },
+  "bugs": {
+    "url": "https://github.com/keleko34/KonnektSuite_3D/issues"
+  },
+  "dependencies": {
+    "cannon": "^0.6.2",
+    "codemirror": "^5.24.2",
+    "nw": "0.20.3-sdk",
+    "shader-particle-engine": "^1.0.6",
+    "three": "^0.84.0"
+  },
+  "scripts": {
+    "installer": "npm i && copy installer_files\\*.dll node_modules\\nw\\nwjs\\",
+    "start": "node_modules\\nw\\nwjs\\nw . --disable-devtools --disable-raf-throttling --enable-gpu-async-worker-context --mode=run",
+    "debug": "node_modules\\nw\\nwjs\\nw . --disable-raf-throttling --enable-gpu-async-worker-context --enable-logging --remote-debugging-port=1729 --load-extension=Extensions\\ShaderEditorExtension\\src --mode=debug",
+    "Editor": "node_modules\\nw\\nwjs\\nw . --disable-raf-throttling --enable-gpu-async-worker-context --enable-logging --remote-debugging-port=1729 --load-extension=Extensions\\ShaderEditorExtension\\src --mode=editor"
+  },
+  "maintainers": [
+    {
+      "name": "keleko34",
+      "email": "gregory.guidero@gmail.com"
+    }
+  ]
+}
