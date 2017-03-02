@@ -3,8 +3,16 @@
   <head>
     <title>KonnektSuite_3D</title>
     <link rel="stylesheet" href="Main.css" />
+    <link rel="stylesheet" href="../../Assets/fonts/open-sans.css" />
+    <!-- backup require Node method and incorporate require Local method -->
+    <script type="text/javascript">window.requireNode = window.require;window.require = undefined;</script>
+    <script type="text/javascript" src="../../node_modules/requirejs/require.js"></script>
+    <script type="text/javascript">window.requireLocal = window.require;window.require = window.requireNode;</script>
+    <script type="text/javascript" src="../Routes.js"></script>
+
   </head>
   <body>
-    Initial App
+    <div id="Window"></div>
+    <script type="text/javascript" src="Main.js"></script>
   </body>
 </html>

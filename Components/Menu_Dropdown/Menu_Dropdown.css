@@ -1,0 +1,42 @@
+.Menu_Dropdown {
+  float:left;
+  margin-top: 5px;
+  -webkit-app-region: no-drag;
+}
+
+.Menu_Dropdown__Title:hover {
+  background: #333;
+}
+
+.Menu_Dropdown__Title--active {
+  background: #333;
+}
+
+.Menu_Dropdown__Title{
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  cursor:pointer;
+  padding: 4px 8px 4px 8px;
+  border-radius: 2px;
+}
+
+.Menu_Dropdown__List {
+  background:#D7D8D9;
+  position: absolute;
+}
+
+.Menu_Dropdown__List__item {
+  cursor: pointer;
+  color: #333;
+  font-size: 12px;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 17px;
+  padding-right: 14px;
+  border-bottom: 1px solid #CCC;
+}
+
+.Menu_Dropdown__List__item:hover {
+      background: #77bbff;
+}
