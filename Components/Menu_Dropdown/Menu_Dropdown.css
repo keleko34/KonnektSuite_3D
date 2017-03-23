@@ -1,18 +1,25 @@
-.Menu_Dropdown {
+/*********************************
+ *  menu_dropdown
+ *  Created by keleko34
+ *  A simple dropdown menu that holds menu items
+ ********************************/
+
+.menu_dropdown {
   float:left;
   margin-top: 5px;
   -webkit-app-region: no-drag;
+  z-index: 1;
 }
 
-.Menu_Dropdown__Title:hover {
+.menu_dropdown__title:hover {
   background: #333;
 }
 
-.Menu_Dropdown__Title--active {
+.menu_dropdown__title--active {
   background: #333;
 }
 
-.Menu_Dropdown__Title{
+.menu_dropdown__title{
   text-align: center;
   font-size: 14px;
   font-weight: 300;
@@ -21,22 +28,8 @@
   border-radius: 2px;
 }
 
-.Menu_Dropdown__List {
+.menu_dropdown__list {
   background:#D7D8D9;
   position: absolute;
-}
-
-.Menu_Dropdown__List__item {
-  cursor: pointer;
-  color: #333;
-  font-size: 12px;
-  height: 28px;
-  line-height: 28px;
-  padding-left: 17px;
-  padding-right: 14px;
-  border-bottom: 1px solid #CCC;
-}
-
-.Menu_Dropdown__List__item:hover {
-      background: #77bbff;
+  z-index: 1;
 }

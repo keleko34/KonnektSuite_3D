@@ -1,0 +1,20 @@
+/*********************************
+ *  menu_item
+ *  Created by keleko34
+ *  clickable item to be placed inside a menu
+ ********************************/
+
+.menu_item {
+  cursor: pointer;
+  color: #333;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 19px;
+  padding-right: 28px;
+  border-bottom: 1px solid #CCC;
+}
+
+.menu_item:hover {
+  background: #77bbff;
+}

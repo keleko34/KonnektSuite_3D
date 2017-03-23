@@ -1,10 +1,10 @@
 /*********************************
- *  window_package_cms
+ *  menu_item_cms
  *  Created by keleko34
- *  This is the main wrapper for the window
+ *  clickable item to be placed inside a menu
  ********************************/
 
-function window_package()
+function menu_item()
 {
   /* ATTRIBUTES */
 

@@ -1,33 +1,38 @@
-.ToolBar {
+.toolbar {
   position: absolute;
   width: 100%;
   height: 30px;
+  user-select: none;
+  -webkit-user-select: none;
   -webkit-app-region: drag;
+  display:{{isLiveMode | showTopBar}}
 }
 
-.ToolBar__Icon {
+.toolbar__icon {
+  -webkit-app-region: no-drag;
   position: absolute;
   width: 20px;
   height: 20px;
   margin: 5px;
 }
 
-.ToolBar__Icon__Image {
+.toolbar__icon__image {
   width: 20px;
   height: 20px;
 }
 
-.ToolBar__Title {
+.toolbar__title {
   position: absolute;
   left: 50%;
   margin-top: 6px;
   font-weight: 300;
   cursor: default;
+  margin-left: {{titleMargin | pixels}}
 }
 
-.ToolBar__Menu_Wrapper{
+.toolbar__menu_wrapper{
+  -webkit-app-region: no-drag;
   position: absolute;
-  overflow: hidden;
   margin-left:28px;
   width: calc(100% - 28px);
 }
