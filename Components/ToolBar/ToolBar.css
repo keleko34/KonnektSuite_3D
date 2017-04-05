@@ -24,7 +24,7 @@
 .toolbar__title {
   position: absolute;
   left: 50%;
-  margin-top: 6px;
+  margin-top: 8px;
   font-weight: 300;
   cursor: default;
   margin-left: {{titleMargin | pixels}}
