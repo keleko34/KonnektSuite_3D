@@ -5,19 +5,27 @@ module.exports = {
       items:[
         {
           title:"New Project",
-          method:function(){}
+          method:function(){
+            Project.new();
+          }
         },
         {
           title:"Save",
-          method:function(){}
+          method:function(){
+            Project.save();
+          }
         },
         {
           title:"Save As",
-          method:function(){}
+          method:function(){
+            Project.saveas();
+          }
         },
         {
           title:"Load Project",
-          method:function(){}
+          method:function(){
+            Project.load();
+          }
         }
       ]
     },
@@ -26,7 +34,9 @@ module.exports = {
       items:[
         {
           title:"Project Settings",
-          method:function(){}
+          method:function(){
+            Project.settings();
+          }
         }
       ]
     },
@@ -35,7 +45,9 @@ module.exports = {
       items:[
         {
           title:"Layout",
-          method:function(){}
+          method:function(){
+            Project.layout();
+          }
         }
       ]
     },
@@ -44,9 +56,37 @@ module.exports = {
       items:[
         {
           title:"Console",
-          method:function(){}
+          method:function(){
+            Project.debug();
+          }
         }
       ]
+    }
+  ],
+  toolbar_icons:[
+    {
+      right:58,
+      title:'Minimize',
+      src:'/Assets/img/icons/minimize.svg',
+      method:function(){
+        Win.minimize();
+      }
+    },
+    {
+      right:33,
+      title:'Maximize',
+      src:'/Assets/img/icons/maximize.svg',
+      method:function(){
+        Win.maximize();
+      }
+    },
+    {
+      right:10,
+      title:'Close',
+      src:'/Assets/img/icons/close.svg',
+      method:function(){
+        Win.close();
+      }
     }
   ]
 }

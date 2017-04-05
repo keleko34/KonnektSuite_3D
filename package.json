@@ -13,6 +13,9 @@
     "width": 1280,
     "height": 720
   },
+  "webkit":{
+    "page-cache":false
+  },
   "version": "0.0.0",
   "description": "WEBGL Node-Webkit Engine and Editor",
   "keywords": [
@@ -42,8 +45,8 @@
   },
   "dependencies": {
     "codemirror": "^5.24.2",
-    "konnekt": "^0.2.1",
-    "nw": "0.20.3-sdk",
+    "konnekt": "^0.3.9",
+    "nw": "0.21.4-sdk",
     "shader-particle-engine": "^1.0.6",
     "three": "^0.84.0"
   },
@@ -60,6 +63,6 @@
     }
   ],
   "devDependencies": {
-    "K_Tasks": "^0.7.8"
+    "K_Tasks": "^0.8.1"
   }
 }

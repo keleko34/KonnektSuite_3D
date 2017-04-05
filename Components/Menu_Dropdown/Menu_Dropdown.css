@@ -4,22 +4,22 @@
  *  A simple dropdown menu that holds menu items
  ********************************/
 
-.menu_dropdown {
+.{{local}} .menu_dropdown {
   float:left;
   margin-top: 5px;
   -webkit-app-region: no-drag;
   z-index: 1;
 }
 
-.menu_dropdown__title:hover {
+.{{local}} .menu_dropdown__title:hover {
   background: #333;
 }
 
-.menu_dropdown__title--active {
+.{{local}} .menu_dropdown__title--active {
   background: #333;
 }
 
-.menu_dropdown__title{
+.{{local}} .menu_dropdown__title{
   text-align: center;
   font-size: 14px;
   font-weight: 300;
@@ -28,8 +28,9 @@
   border-radius: 2px;
 }
 
-.menu_dropdown__list {
+.{{local}} .menu_dropdown__list {
   background:#D7D8D9;
   position: absolute;
+  display:{{active | isDisplayed}};
   z-index: 1;
 }

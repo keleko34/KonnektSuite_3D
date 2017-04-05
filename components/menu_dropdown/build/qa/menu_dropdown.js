@@ -32,7 +32,7 @@ function menu_dropdown(node)
   {
     self.onhover.call(this,self);
   }
-  
+
 }
 
 /* PROTOTYPES */

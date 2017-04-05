@@ -1,0 +1,19 @@
+/*********************************
+ *  icon_button
+ *  Created by keleko34
+ *  a standard button composed of a single icon
+ ********************************/
+
+.{{local}} .icon_button {
+  right: {{right}}px;
+  top: 4px;
+  padding: 4px;
+  -webkit-app-region: no-drag;
+  position: absolute;
+  cursor: pointer;
+}
+
+.{{local}} .icon_button__image {
+  width: 12px;
+  height: 12px;
+}

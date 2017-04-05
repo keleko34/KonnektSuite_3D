@@ -31,7 +31,6 @@
 }
 
 .toolbar__menu_wrapper{
-  -webkit-app-region: no-drag;
   position: absolute;
   margin-left:28px;
   width: calc(100% - 28px);

@@ -10,6 +10,9 @@
   <body>
     <window_frame id="Window"></window_frame>
     <script type="text/javascript">
+      console.error("Message");
+      if(window.location.search.length === 0) window.location.search = "?env=qa&debug=true";
+      var config = {base:'window_frame'};
       Konnekt().localRouting(true)(document.getElementById('Window'));
     </script>
   </body>

@@ -6,10 +6,13 @@
 
 function menu_dropdown(node)
 {
+  var self = this;
   /* ATTRIBUTES */
   this.title = "";
   this.items = [];
   this.active = false;
+  this.onclick = function(){};
+  this.onhover = function(){};
   this.filters.isActive = function(v)
   {
     return (v ? 'active' : 'inactive');
@@ -20,7 +23,12 @@ function menu_dropdown(node)
   }
   this.activeClick = function(e)
   {
-    node.kb_viewmodel.active = !node.kb_viewmodel.active;
+    self.onclick.call(this,self);
+  }
+
+  this.activeHover = function(e)
+  {
+    self.onhover.call(this,self);
   }
   
 }

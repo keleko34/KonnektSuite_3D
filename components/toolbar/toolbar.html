@@ -1,8 +1,9 @@
 <!-- toolbar Created by keleko34, Holds all the main window menus and window interactive buttons -->
-<div class="toolbar">
+<div class="toolbar" ondblclick="{{ondblclick}}">
   <div class="toolbar__icon">
     <img class="toolbar__icon__image" />
   </div>
   <div class="toolbar__title">{{title | checkTitleMargin}}</div>
   <div class="toolbar__menu_wrapper">{{for menus loop menu_dropdown | checkDebug}}</div>
+  <div class="toolbar__icon_wrapper">{{for toolbar_icons loop icon_button}}</div>
 </div>
